@@ -10,26 +10,20 @@ const TestLottie = () => {
   return <>
     <StatusBar backgroundColor="white" barStyle='dark-content'/>
     <SafeAreaView style={[styles.container]}>
-
       <Image style={[styles.logo]} resizeMode="contain" autoSize source={logo}/>
       {/* Animação Lottie */}
       <Lottie style={[styles.lottie]} resizeMode="contain" autoSize source={pizza} autoPlay loop />
-
       {/* Container Buttons */}
       <View style={[styles.buttons]}>
-
           {/* Botão Login */}
           <TouchableOpacity style={[styles.btnLogin]}>
             <Text style={[styles.loginText]}>ENTRAR</Text>
           </TouchableOpacity>
-
           {/* Botão Sing Up */}
           <TouchableOpacity style={[styles.btnSingUp]}>
             <Text style={[styles.singupText]}>CADASTRAR</Text>
           </TouchableOpacity>
-
       </View>
-
     </SafeAreaView>
   </>
 }
@@ -40,6 +34,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly', 
     alignItems: 'center', 
     flexDirection: 'column',
+    backgroundColor: '#FFFFFF'
   },
   title: {
     fontSize: 50, 
